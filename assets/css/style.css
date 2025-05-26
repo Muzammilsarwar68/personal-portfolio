@@ -1879,7 +1879,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
-  #FullImageView {
+}
+
+#FullImageView {
     display: none;
     position: absolute;
     top: 0;
@@ -1904,5 +1906,3 @@ textarea.form-input::-webkit-resizer { display: none; }
     color: white;
     cursor: pointer;
   }
-
-}
