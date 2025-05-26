@@ -1136,7 +1136,8 @@
   <script type="text/javascript">
     function FullView(ImgLink) {
         document.getElementById("FullImage").src = "assets/images/" + ImgLink;
-        document.getElementById("FullImageView").style.display = "block";
+        document.getElementById("FullImageView").style.display = "flex";
+        document.getElementById("FullImageView").style.flexDirection = "column";
     }
     function CloseFullView() {
         document.getElementById("FullImageView").style.display = "none";
