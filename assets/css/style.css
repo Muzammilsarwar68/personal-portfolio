@@ -1884,7 +1884,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 #FullImageView {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
