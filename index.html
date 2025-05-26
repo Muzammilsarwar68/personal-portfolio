@@ -776,12 +776,12 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="shopify">
+            <li class="project-item  active" data-filter-item data-category="shopify" onclick="FullView('assets/images/shopify-ad-1.jpg')">
               <a href="#">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline" onclick="FullView('assets/images/shopify-ad-1.jpg')"></ion-icon>
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
                   <img src="./assets/images/shopify-ad-1.jpg" alt="shopify dashboard" loading="lazy">
@@ -1066,12 +1066,12 @@
 
           </ul>
 
-          <div id="FullImageView">
+        </section>
+
+        <div id="FullImageView">
             <img id="FullImage"/>
             <span id="closeButton" onclick="CloseFullView()"> </span>
-          </div>
-
-        </section>
+        </div>
 
       </article>
 
@@ -1135,7 +1135,6 @@
 
   <script type="text/javascript">
     function FullView(ImgLink) {
-        alert(ImgLink);
         document.getElementById("FullImage").src = ImgLink;
         document.getElementById("FullImage").style.display = "block";
     }
