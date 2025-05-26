@@ -910,7 +910,7 @@
                     <ion-icon name="eye-outline" onclick="FullView(this.src)"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/meta-ad-2.png" alt="meta dashboard" loading="lazy">
+                  <img src="./assets/images/meta-ad-2.jpg" alt="meta dashboard" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Meta Dashboard</h3>
@@ -1135,6 +1135,7 @@
 
   <script type="text/javascript">
     function FullView(ImgLink) {
+        alert(ImgLink);
         document.getElementById("FullImage").src = ImgLink;
         document.getElementById("FullImage").style.display = "block";
     }
