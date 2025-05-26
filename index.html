@@ -23,6 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/47130ccb14.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -1101,7 +1102,7 @@
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button class="form-btn" type="submit" disabled data-form-btn onclick="ShowToast()">
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
@@ -1120,6 +1121,8 @@
     <img id="FullImage"/>
     <span id="CloseButton" onclick="CloseFullView()">&times;</span>
   </div>
+
+  <div id="toastBox"></div>
 
   <!--
     - custom js link
@@ -1141,6 +1144,16 @@
     }
     function CloseFullView() {
         document.getElementById("FullImageView").style.display = "none";
+    }
+    function ShowToast() {
+        let toast = document.createElement('div');
+        toast.classList.add('toast');
+        toast.innerHTML = '<i class="fa-regular fa-circle-check" style="color: #00fa1d;"></i> Thank you for reaching out. I will get back with you shortly.';
+        document.getElementById('toastBox').appendChild(toast);
+
+        setTimeout(() => {
+            toast.remove();
+        }, 10000);
     }
   </script>
 
