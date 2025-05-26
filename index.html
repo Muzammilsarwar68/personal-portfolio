@@ -1140,7 +1140,7 @@
         document.getElementById("FullImage").src = "assets/images/" + ImgLink;
         document.getElementById("FullImageView").style.display = "flex";
         document.getElementById("FullImageView").style.flexDirection = "column";
-         document.getElementById("FullImageView").style.position = "fixed";
+        document.getElementById("FullImageView").style.position = "fixed";
     }
     function CloseFullView() {
         document.getElementById("FullImageView").style.display = "none";
@@ -1151,9 +1151,10 @@
         toast.innerHTML = '<i class="fa-regular fa-circle-check" style="color: #00fa1d;"></i> Thank you for reaching out. I will get back with you shortly.';
         document.getElementById('toastBox').appendChild(toast);
 
+
         setTimeout(() => {
             toast.remove();
-        }, 10000);
+        }, 20000);
     }
   </script>
 
